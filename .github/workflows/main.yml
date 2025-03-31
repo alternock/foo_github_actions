@@ -31,4 +31,11 @@ jobs:
        - name: es la rama main
          if:  github.ref == 'refs/heads/main'
          run: echo "si es la rama main"
-      
+
+  variable_de_entorno:
+     runs-on: ubuntu-latest
+     env:
+       FOO: "FOOZIMAN"
+     steps:
+       - name: el contenido de la variable de entorno es 
+         run: echo "el valor es:$FOO"
