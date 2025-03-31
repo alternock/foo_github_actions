@@ -39,3 +39,20 @@ jobs:
      steps:
        - name: el contenido de la variable de entorno es 
          run: echo "el valor es:$FOO"
+
+  estrategias_de_versiones:
+      runs-on: ubuntu-latest
+      strategy:
+        matrix: 
+          node-version: [18,19,20]
+      steps:
+       - name: instalar node
+         uses: actions/setup-node@v3
+         with:
+             node-version: ${{matrix.node-version}}
+
+       - name: mostrar versiones
+         run: echo "node version:" node --version
+         
+        
+          
