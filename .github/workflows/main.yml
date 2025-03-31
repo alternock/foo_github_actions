@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: el tipo de shell
-        run:  "bash: ${{bash --version}}"
+        run:  "bash: ${bash --version}"
         
