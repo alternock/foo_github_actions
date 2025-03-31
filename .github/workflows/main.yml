@@ -12,3 +12,10 @@ jobs:
     steps:
       - name: tipo de evento
         run: echo "el evento es:" ${{ github.event_name }}
+
+  tipo_de_bash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: el tipo de shell
+        run:  "shell: $SHELL"
+        
