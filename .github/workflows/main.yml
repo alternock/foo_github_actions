@@ -12,4 +12,4 @@ jobs:
      runs-on: ubuntu-24.04-arm
      steps:
        - name: tipo de evento
-         run: "el evento es: ${{ github.event_name }}"
+         run: echo "el evento es: ${{ github.event_name }}"
