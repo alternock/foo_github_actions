@@ -13,9 +13,8 @@ jobs:
       - name: tipo de evento
         run: echo "el evento es:" ${{ github.event_name }}
 
-  tipo_de_bash:
+  autor:
     runs-on: ubuntu-latest
     steps:
-      - name: el tipo de shell
-        run:  echo "bash:" bash --version 
-        
+      - name:  el autor es
+        run:  echo "autor:" ${{ github.actor }}
