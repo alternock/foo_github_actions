@@ -6,3 +6,10 @@ jobs:
     steps:
       - name: saludos
         run: echo "hola mundo desde github actions"
+
+
+  eventos:
+     runs-on: ubuntu-24.04-arm
+     steps:
+       - name: tipo de evento
+         run: "el evento es: ${{ github.event_name }}"
