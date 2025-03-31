@@ -24,4 +24,11 @@ jobs:
     steps:
       - name: mis secretos
         run: echo "los secretos son:" ${{secrets.USERNAME}} ${{secrets.ROLE}}
-     
+
+  detectar_rama:
+     runs-on: ubuntu-latest
+     steps:
+       - name: es la rama main
+         if:  github.ref == 'refs/heads/main'
+         run: echo "si es la rama main"
+      
