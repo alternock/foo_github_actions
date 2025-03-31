@@ -18,3 +18,10 @@ jobs:
     steps:
       - name:  el autor es
         run:  echo "autor:" ${{ github.actor }}
+
+  secretos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mis secretos
+        run: echo "los secretos son:" ${{secrets.USERNAME}} ${{secrets.ROLE}}
+     
